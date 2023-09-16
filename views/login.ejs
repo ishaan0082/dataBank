@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Login</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+           background-color: rgb(169, 199, 173);
+           font-family: 'Montserrat', sans-serif;
+        }
+        .heading{
+            background-color: rgb(14, 34, 3);
+            color: aliceblue;
+            padding: 10px;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .searchBox{
+            max-width: 300px;
+            height: 2%;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+            background-color: rgb(90, 122, 78);
+        }
+        form>p{
+            text-align: center;
+            
+        }
+        form>*{
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        input{
+            width: 92%;
+            border-radius: 2px;
+        }
+        input,button{
+            border: none;
+            background-color: rgb(158, 193, 167);
+            padding: 10px;
+        }
+        input:focus{
+            box-shadow: rgb(158, 193, 167);
+        }
+        button{
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: aliceblue;
+            background-color: rgb(6, 48, 6);
+            width: 100%;
+
+        }
+        button:hover{
+            background-color: rgb(21, 58, 27);
+        }
+        img{
+            margin: auto;
+            margin-top: 20px;
+        }
+        p{
+            text-align: center;
+            font-size: 35px;
+            font-weight: bolder;
+            color: rgb(21, 58, 27);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="heading">AlumNet</div>
+        <div class="searchBox">
+            <img src="./psit.png" height="70px" width="70px" alt="" srcset="">
+            <p>Admin</p>
+            <form action="admin" method="POST">
+                 <input type="text" name="userid" placeholder="Username">
+                 <input type="text" name="password" placeholder="Password">
+                <br><button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
